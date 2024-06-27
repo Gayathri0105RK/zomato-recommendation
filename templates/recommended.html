@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zomato Dine-In Recommendations - Recommended Places</title>
+    <title>FoodieFinds - Recommended Places</title>
     <style>
         /* General Styles */
         body {
@@ -12,7 +12,7 @@
             color: #333;
             margin: 0;
             padding: 0;
-            overflow-x: auto; /* Enable horizontal scrolling */
+            overflow: hidden; /* Hide any overflowing content */
         }
 
         header {
@@ -29,21 +29,27 @@
         }
 
         main {
-            padding: 20px;
+            padding: 0;
             text-align: center;
+            height: 100vh; /* Ensure main takes full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Tableau Dashboard Styles */
         .tableau-wrapper {
-            overflow-x: auto; /* Enable horizontal scrolling */
-            margin: 0 auto;
-            max-width: 95%; /* Ensure it doesn't exceed viewport width */
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: calc(100vh - 100px); /* Adjusted height for full viewport minus header height */
+            overflow: hidden; /* Hide any overflowing content */
         }
 
         .tableau-dashboard {
             border: none;
-            width: 100%; /* Ensure it takes full width */
-            height: 600px; /* Adjust height as needed */
+            width: 100%;
+            height: 100%; /* Take full height of its container */
         }
 
         footer {
@@ -59,19 +65,18 @@
 </head>
 <body>
     <header>
-        <h1>Zomato Dine-In Recommendations</h1>
+        <h1>FoodieFinds - Discover the Best Places to Dine</h1>
     </header>
     <main>
         <div class="tableau-wrapper">
             <!-- Tableau Dashboard Embed -->
-            <iframe class="tableau-dashboard" src="https://public.tableau.com/views/25_6_24/Dashboard1?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:origin=viz_share_link" frameborder="0"></iframe>
+            <iframe class="tableau-dashboard" src="https://public.tableau.com/views/25_6_24/Dashboard1?:language=en-US&publish=yes&:showVizHome=no&:display_count=n&:origin=viz_share_link" frameborder="0"></iframe>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Zomato Dine-In Recommendations. All rights reserved.</p>
+        <p>&copy; 2024 FoodieFinds. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
 
 
