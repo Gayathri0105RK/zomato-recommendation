@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Dine-In Recommendations</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Image and Button Styles */
+        .food-animation {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .food-animation:hover {
+            transform: scale(1.05);
+        }
+
+        .recommendation-button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .recommendation-button:hover {
+            background-color: #c82333;
+        }
+
+        /* Recommendation Content Styles */
+        .recommendation-content {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zomato Dine-In Recommendations</h1>
+    </header>
+    <main>
+        <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/06/idli-recipe-1-280x280.jpg" alt="Indian Food" class="food-animation">
+        <h2>Welcome to the Best Restaurant Recommendations</h2>
+        <p>Discover the best places to dine-in with our expert recommendations. Click the button below to get a personalized recommendation!</p>
+        <!-- Recommendation Button -->
+        <a href="/recommend" class="recommendation-button">Get Recommendation</a>
+        
+        <!-- Recommendation Content -->
+        <div id="recommendation1" class="recommendation-content">
+            <p>Your Recommendation: Try the new Italian Bistro in downtown!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zomato Dine-In Recommendations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
